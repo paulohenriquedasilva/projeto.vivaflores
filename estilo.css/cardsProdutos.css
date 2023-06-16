@@ -1,0 +1,23 @@
+
+#cardsProd img{
+    width: 100%;
+    height: 12rem;
+}
+
+#cardsProd .card{
+    width: 13rem;
+    height: 26rem;
+}
+
+#cardsProd a{
+    position: absolute;
+    bottom: 23px;
+}
+
+#cardsProd {
+    margin: 2rem 0 0.5rem 0;
+}
+
+.valor {
+    color: black;
+}  

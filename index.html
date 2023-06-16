@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VivaFlores</title>
+    <link rel="stylesheet" href="estilo.css/UrlEstilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body id="body">
+    <div id="idiomas"></div>
+    <!--------------menu inicial------------->
+    <header id="header" class="container-fluid">
+    <div class="container-fluid">
+        <nav class="navbar">
+            <div class="container-fluid">
+            <a href="index.html" style="text-decoration: none; color: black;"><img src="imagens/logoEmpresa.png" alt="" style="width: 30%;"><strong style="padding-top: 30px;">VivaFlores</strong></a>
+              <form class="d-flex col-5" role="search">
+                <input class="form-control" type="search" placeholder="Pesquisar" aria-label="Search" style="height: 25px;">
+                <button class="btn btn-outline-success" type="submit"  style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem; height: 25px; width: 30px;">🔍</button>
+              </form>
+              <span>
+              <button id="logar" class="btn btn-outline-success" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="--bs-btn-padding-y: .20rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .70rem; height: 23px; width:16%; margin-left: 20px; text-align: center;">Login</button>
+              <a href="#" id="traduzir" class="mx-3"><img src="imagens/united-states-flag-free-png.webp" alt="" style="width: 40px;"></a>
+              <a href="#" id="aumentarFonte" class="mx-3">A+</a>
+              <a href="#" id="diminuirFonte" class="mx-2">A-</a>
+              <a href="#" class="mx-2" style="text-decoration: none;" id="temaEscuro">👁️</a>
+            </span>
+            </div>
+          </nav>
+        </header>
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Login</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="input-group flex-nowrap">
+                  <span class="input-group-text" id="addon-wrapping">@</span>
+                  <input type="text" class="form-control" placeholder="Insira seu email" aria-label="Username" aria-describedby="addon-wrapping">
+                </div>
+                <br>
+                <div class="input-group mb-3">
+                  <span class="input-group-text" id="inputGroup-sizing-default">$</span>
+                  <input type="text" class="form-control" placeholder="Insira sua senha" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                </div>
+                <div class="container">
+                <button type="button" class="btn bnt-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">Criar minha conta</button>
+               </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Acessar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Cadastro</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="input-group flex-nowrap">
+                  <span class="input-group-text" id="addon-wrapping">@</span>
+                  <input type="text" class="form-control" placeholder="Insira seu email" aria-label="Username" aria-describedby="addon-wrapping">
+                </div>
+                <br>
+                <div class="input-group flex-nowrap">
+                  <span class="input-group-text" id="addon-wrapping">:)</span>
+                  <input type="text" class="form-control" placeholder="Nome e sobrenome" aria-label="Username" aria-describedby="addon-wrapping">
+                </div>
+                <br>
+                <div class="input-group flex-nowrap">
+                  <span class="input-group-text" id="addon-wrapping">$</span>
+                  <input type="text" class="form-control" placeholder="Crie uma senha" aria-label="Username" aria-describedby="addon-wrapping">
+                </div>
+                <br>
+                <div class="input-group flex-nowrap">
+                  <span class="input-group-text" id="addon-wrapping">$</span>
+                  <input type="text" class="form-control" placeholder="Confirme a senha" aria-label="Username" aria-describedby="addon-wrapping">
+                </div>
+               </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cadastrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      
+      <!-------------------------------------Menu Horizontal------------------------------------->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" style="height: 2rem;">
+        <div class="container-fluid">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+       <ul class="navbar-nav">
+         <li class="marginMenu nav-item">
+           <a class="nav-link active" aria-current="page" href="#"><strong>Tipos de Flores</strong></a>
+         </li>
+         <div class="collapse navbar-collapse " id="navbarNav">
+           <ul class="navbar-nav">
+             <li class="marginMenu nav-item">
+               <a class="nav-link active" aria-current="page" href="maisVendidos.html"><strong>Mais Vendidos</strong></a>
+             </li>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="marginMenu nav-item">
+              <a class="nav-link active" aria-current="page" href="ofertasDia.html"><strong>Ofertas do Dia</strong></a>
+            </li>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="marginMenu nav-item">
+                  <a class="nav-link active" aria-current="page" href="ebooks.html"><strong>Ebooks</strong></a>
+                </li>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+              <li class="marginMenu nav-item">
+                <a class="nav-link active" aria-current="page" href="#"><strong>Flores em Vasos</strong></a>
+              </li>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="marginMenu nav-item">
+                    <a class="nav-link active" aria-current="page" href="ideiasPresentes.html"><strong>Ideias para Presentes</strong></a>
+                  </li>
+            </div>
+          </nav>
+
+          <!--------------------------------Carrossel com imagem e legenda---------------------------------->
+            <div id="carrosselImagens" class="container-fluid p-0">
+              <div class="row">
+                  <div class="col">
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="imagens/imagem1.jpg" class="d-block w-100" alt="">
+                          <div class="carousel-caption d-none d-md-block">
+                            <p class="fraseCarrossel"><strong>Celebre a vida, expresse amor e<br>carinho através das flores!</strong></p>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img src="imagens/imagem2.jpg" class="d-block w-100" alt="">
+                          <div class="carousel-caption d-none d-md-block">
+                            <p class="fraseCarrossel"><strong>Deixe a beleza florescer na sua vida com vivaFlores!</strong></p>
+                          </div>
+                        </div>
+                        <div class="carousel-item">
+                          <img src="imagens/imagem3.jpg" class="d-block w-100" alt="">
+                          <div class="carousel-caption d-none d-md-block">
+                            <p class="fraseCarrossel"><strong>Encontre a beleza que floresce em cada momento com<br>as flores exuberantes da nossa floricultura.</strong></p>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                      </div>
+                  </div>
+              </div>
+            </div>
+
+            <div>
+              <div>
+            
+                <a href="chat.html"><div id="mascote" class=""><img src="imagens/Mascote 2-fotor-bg-remover-20230517182451.png" alt="" class="img-fluid"></div></a>
+              </div>
+            </div>
+
+            <!-------------------------------Cards produtos---------------------------->
+            <div id="cardsProd" class="container-fluid">
+              <div class="container" style="text-align: center;"><h4>Alguns dos Nossos Produtos</h4></div>
+              <div class="row justify-content-center">
+                <div class="card m-1 col-2 p-0">
+                  <img src="imagens/ProdutoUm.jpg" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h5 class="valor card-title"> R$ 10,00 por planta</h5>
+                    <p class="card-text">Plantas suculentas de diferentes formas e tamanhos.</p>
+                    <a href="#" class="btn btn-primary btn-sm">Adicionar ao Carrinho</a>
+                  </div>
+                </div>
+                <div class="card m-1 col-2 p-0">
+                  <img src="imagens/ProdutoDois.jpg" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h5 class="valor card-title">Lírio - R$ 25,00 por ramo</h5>
+                    <p class="card-text">Flores perfumadas com pétalas coloridas e elegantes.</p>
+                    <a href="#" class="btn btn-primary btn-sm">Adicionar ao Carrinho</a>
+                  </div>
+                </div>
+                <div class="card m-1 col-2 p-0">
+                  <img src="imagens/produtoTres.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="valor card-title">Orquídea - R$ 15,00 por planta.</h5>
+                    <p class="card-text">Exóticas e elegantes, conhecidas por suas flores duradouras.</p>
+                    <a href="#" class="btn btn-primary btn-sm">Adicionar ao Carrinho</a>
+                  </div>
+                </div>
+                <div class="card m-1 col-2 p-0">
+                  <img src="imagens/produtoQuatro.jpg" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h5 class="valor card-title">Violeta - R$ 8,00 por planta</h5>
+                    <p class="card-text">Flores delicadas e coloridas, ideais para canteiros e vasos.</p>
+                    <a href="#" class="btn btn-primary btn-sm">Adicionar ao Carrinho</a>
+                  </div>
+                </div>
+                <div class="card m-1 col-2 p-0">
+                  <img src="imagens/presente3.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="valor card-title">Margarida Branca - R$ 21,00</h5>
+                    <p class="card-text">Flores perfumadas com pétalas coloridas e elegantes.</p>
+                    <a href="#" class="btn btn-primary btn-sm">Adicionar ao Carrinho</a>
+                  </div>
+                </div>
+                <div class="card m-1 col-2 p-0">
+                  <img src="imagens/presente4.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="valor card-title">Orquídea Phalaenopsis - R$ 10,00</h5>
+                    <p class="card-text">Flores perfumadas com pétalas coloridas e elegantes.</p>
+                    <a href="#" class="btn btn-primary btn-sm">Adicionar ao Carrinho</a>
+                  </div>
+                </div>
+                <div class="card m-1 col-2 p-0">
+                  <img src="imagens/presente5.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="valor card-title">Orquídea Cymbidium - R$ 10,00</h5>
+                    <p class="card-text">Flores perfumadas com pétalas coloridas e elegantes.</p>
+                    <a href="#" class="btn btn-primary btn-sm">Adicionar ao Carrinho</a>
+                  </div>
+                </div>
+                <div class="card m-1 col-2 p-0">
+                  <img src="imagens/presente6.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="valor card-title">Girassol - R$ 13,00</h5>
+                    <p class="card-text">Flores perfumadas com pétalas coloridas e elegantes.</p>
+                    <a href="#" class="btn btn-primary btn-sm">Adicionar ao Carrinho</a>
+                  </div>
+                </div>
+                <div class="card m-1 col-2 p-0">
+                  <img src="imagens/presente7.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="valor card-title">Gérbera Colorida - R$ 12,00</h5>
+                    <p class="card-text">Flores perfumadas com pétalas coloridas e elegantes.</p>
+                    <a href="#" class="btn btn-primary btn-sm">Adicionar ao Carrinho</a>
+                  </div>
+                </div>
+                <div class="card m-1 col-2 p-0">
+                  <img src="imagens/presente9.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="valor card-title">Gypsophila - R$ 15,00</h5>
+                    <p class="card-text">Flores perfumadas com pétalas coloridas e elegantes.</p>
+                    <a href="#" class="btn btn-primary btn-sm">Adicionar ao Carrinho</a>
+                  </div>
+                </div>
+                <div class="card m-1 col-2 p-0">
+                  <img src="imagens/presente9.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="valor card-title">Lírio - R$ 25,00 por ramo</h5>
+                    <p class="card-text">Flores perfumadas com pétalas coloridas e elegantes.</p>
+                    <a href="#" class="btn btn-primary btn-sm">Adicionar ao Carrinho</a>
+                  </div>
+                </div>
+                <div class="card m-1 col-2 p-0">
+                  <img src="imagens/presente2.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="valor card-title">Lírio - R$ 25,00 por ramo </h5>
+                    <p class="card-text">Flores perfumadas com pétalas coloridas e elegantes.</p>
+                    <a href="#" class="btn btn-primary btn-sm">Adicionar ao Carrinho</a>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+
+            <!------------------------------cards promocoes--------------------------->
+            <div id="cardPromo" class="container-fluid">
+              <div class="container" style="text-align: center;"><h4>Algumas das Nossas Promocoes</h4></div>
+              <div class="row">
+                <div class="card col-2">
+                  <img src="imagens/promocao5.jpg" class="promo  img-fluid card-img" alt="">
+                  <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                    <h1 class="card-title"><strong>44%</strong></h1>
+                  </div>
+                  <div class="card-img-overlay">
+                    <a href="#" class="btn btn-secondary  btn-sm">Eu quero!</a>
+                  </div>
+                </div>
+                <div class="card col-2">
+                  <img src="imagens/promocao2.jpg" class="promo img-fluid card-img" alt="">
+                  <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                    <h1 class="card-title"><strong>33%</strong></h1>
+                  </div>
+                  <div class="card-img-overlay">
+                    <a href="#" class="btn btn-secondary  btn-sm">Eu quero!</a>
+                  </div>
+                </div>
+                <div class="card col-2">
+                  <img src="imagens/promocao3.jpg" class="promo img-fluid card-img" alt="">
+                  <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                    <h1 class="card-title"><strong>45%</strong></h1>
+                  </div>
+                  <div class="card-img-overlay">
+                    <a href="#" class="btn btn-secondary  btn-sm">Eu quero!</a>
+                  </div>
+                </div>
+                <div class="card col-2">
+                  <img src="imagens/promocao5.jpg" class="img-fluid card-img promo" alt="">
+                  <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                    <h1 class="card-title"><strong>40%</strong></h1>
+                  </div>
+                  <div class="card-img-overlay">
+                    <a href="#" class="btn btn-secondary  btn-sm">Eu quero!</a>
+                  </div>
+                </div>
+                <div class="card col-2">
+                  <img src="imagens/promocao5.jpg" class="img-fluid card-img promo" alt="">
+                  <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                    <h1 class="card-title"><strong>35%</strong></h1>
+                  </div>
+                  <div class="card-img-overlay">
+                    <a href="#" class="btn btn-secondary  btn-sm">Eu quero!</a>
+                  </div>
+              </div>
+            </div>
+
+            <!--------------------------------Sobre a empresa----------------------------->
+            <div id="sobreEmpresa" class="container-fluid rounded">
+                <div class="row">
+                  <div class="col-sm">
+                    <div class="container">
+                      <div class="row">
+                  <img src="imagens/artePlanta1.png" class="img-fluid rounded float-start" alt="...">
+                </div>
+              </div>
+                </div>
+                <div id="textoSobre" class="col-sm">
+                  <div class="container">
+                    <div class="row">
+                  <p>
+                    <span><img src="imagens/logoEmpresa.png" alt="" style="width: 2rem; height: 1.5rem;"><strong>VivaFlores</strong></span><br>
+                    <br>
+                    <strong>
+                      Bem-vindo à vivaFlores, a encantadora floricultura que floresceu em 2023 e tem um amor inabalável por comercializar flores exuberantes.
+                      Nós somos apaixonados por trazer a beleza natural e o aroma das flores para o coração de nossos clientes, tornando cada ocasião especial e memorável.
+                      Desde o nosso início, nosso objetivo tem sido oferecer uma experiência única de compra de flores, combinando variedade, qualidade e serviço excepcionais.
+                      Nossas prateleiras estão repletas de uma vasta seleção de flores frescas, plantas exuberantes e arranjos florais deslumbrantes, todos cuidadosamente escolhidos para inspirar e encantar.
+                    </strong>
+                  </div>
+                </div>
+              </div>
+                  <div class="col-sm">
+                    <div class="container">
+                      <div class="row">
+                    <img src="imagens/artePlanta2.png" class="img-fluid rounded float-end" alt="...">
+                  </div>
+                  </div>
+                  </div>
+                </div>
+            </div>
+            
+
+            <!---------------------------------------Avaliacoes-------------------------------------->
+            <div id="avaliacoes" class="container-fluid rounded">
+              <div class="container-sm" style="text-align: center; margin-top: 2rem; padding: 1rem;"><Strong>Como é Comprar na vivaFlores ?</Strong></div>
+              <hr>
+                <div class="row">
+                  <div class="card col-2 border-light mb-3" style="max-width: 18rem;">
+                    <div class="card-header"><img src="imagens/figuraAvaliacao.webp" alt=""></div>
+                    <div class="card-body">
+                      <h5 class="nomeCliente card-title">João</h5>
+                      <p class="card-text">"A vivaFlores é simplesmente incrível! Amo suas flores frescas e arranjos perfeitos."</p>
+                    </div>
+                  </div>
+
+                  <div class="card  col-2 border-light mb-3" style="max-width: 18rem;">
+                    <div class="card-header"><img src="imagens/figuraAvaliacao.webp" alt=""></div>
+                    <div class="card-body">
+                      <h5 class="nomeCliente card-title">Maria</h5>
+                      <p class="card-text">"Melhor floricultura da cidade! Sempre encontro flores lindas na vivaFlores."
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="card col-2 border-light mb-3" style="max-width: 18rem;">
+                    <div class="img-fluid  card-header"><img src="imagens/figuraAvaliacao.webp" alt=""></div>
+                    <div class="card-body">
+                      <h5 class="nomeCliente card-title">Ana</h5>
+                      <p class="card-text">"A vivaFlores nunca decepciona! Minhas plantas sempre são saudáveis e vibrantes."</p>
+                    </div>
+                  </div>
+
+                  <div class="card col-2 border-light mb-3" style="max-width: 18rem;">
+                    <div class="img-fluid  card-header"><img src="imagens/figuraAvaliacao.webp" alt=""></div>
+                    <div class="card-body">
+                      <h5 class="nomeCliente card-title">Yasmim</h5>
+                      <p class="card-text">"Amo a vivaFlores! Flores de qualidade e ótimo atendimento. Sou fã!"</p>
+                    </div>
+                  </div>
+
+                  <div class="card col-2 border-light mb-3" style="max-width: 18rem;">
+                    <div class="img-fluid card-header"><img src="imagens/figuraAvaliacao.webp" alt=""></div>
+                    <div class="card-body">
+                      <h5 class="nomeCliente card-title">Luiza</h5>
+                      <p class="card-text">"Amo vivaFlores! Flores incríveis, atendimento excelente."</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div id="compreConosco" class="d-flex justify-content-center align-items-center">
+              <div class="row">
+                  <div class="card col-sm">
+                      <img src="imagens/ImgCCN.jpg" alt="" class="img-fluid rounded">
+                      <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                        <h5 class="nomeCliente card-title" style="font-size: 200%; color: white;">Compre agora com a gente</h5>
+                      </div>      
+                  </div>
+          </div>
+        </div>
+        </main>
+        <!-------------Rodape-------------->
+        <footer>
+          <div id="rodape" class="container-fluid d-flex justify-content-center align-items-center">
+            <div class="row">
+              <div id="voltarInicio" class="container-fluid">
+                <a href="" class="d-flex justify-content-center align-items-center"><h6>Voltar ao início</h6></a>
+              <hr>
+              </div>
+                  
+                <div class="dadosRodape col-3">
+                    <h6>Contatos 📞</h6>
+                    <ul class="dadosRodape">
+                      <li>(81) 90000-0000</li>
+                      <li>(81) 90000-0000</li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                  <h6>Pagamento 💲</h6>
+                  <ul class="dadosRodape">
+                    <li>Pix</li>
+                    <li>Cartao de crédito</li>
+                    <li>Boleto</li>
+                  </ul>
+                </div>
+                <div class="col-3">
+                    <h6>Conheça-nos 🙂</h6>
+                    <ul class="dadosRodape">
+                    <li>Informações corportivas</li>
+                    <li>Acessibilidade</li>
+                    <li>Comunidade</li>
+                  </ul>
+                </div>
+                <div class="col-3">
+                    <h6>Cidades 🗺️</h6>
+                    <ul class="dadosRodape">
+                      <li>Recife | Londes | Nova York </li>
+                      <li>Berlim | Lisboa | Madrid</li>
+                    </ul>
+                </div>
+            </div>
+
+          </div>
+        </footer>
+    </div>
+    <script src="javaScript/temaEscuro.js"></script>
+    <script src="javaScript/tamanhoFonte.js"></script>
+    <script src="javaScript/traducao.js"></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>

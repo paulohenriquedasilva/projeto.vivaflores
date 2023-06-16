@@ -1,0 +1,20 @@
+#voltarInicio {
+    margin-bottom: 3rem;
+    padding: 0.5rem;
+}
+
+#voltarInicio a {
+    text-decoration: none;
+}
+
+#rodape{
+    background-color: #308746;
+}
+
+#rodape a, p{
+    color: rgba(0, 0, 0, 0.801);
+} 
+
+.dadosRodape li{
+   list-style-type: none;
+}

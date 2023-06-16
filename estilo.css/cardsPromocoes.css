@@ -1,0 +1,20 @@
+.promo{
+   height: 100%;
+   opacity: 85%;
+   border: solid;
+   border-width: 0.1rem;
+}
+
+#cardPromo .card{
+  padding: 0;
+  margin: 1.5%;
+}
+
+#cardPromo {
+  margin-bottom: 3rem;
+}
+
+.desconto .card-title{
+  color: white;
+}
+

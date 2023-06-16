@@ -1,0 +1,19 @@
+#sobreEmpresa img{
+   width: 100%;
+   height: 100%;
+}
+
+#sobreEmpresa p{
+    font-size: 70%;
+    text-align: center;
+}
+
+#sobreEmpresa #textoSobre{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+#sobreEmpresa {
+   background-color: white;
+}

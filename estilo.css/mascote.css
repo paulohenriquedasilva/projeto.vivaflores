@@ -1,0 +1,11 @@
+#mascote {
+   width: 5rem;
+   height: 5rem;
+   border-radius: 50%;
+   position: fixed;
+   right: 0;
+   z-index: 3;
+   display: flex;
+   justify-content: center;
+   background-color: rgba(0, 128, 0, 0.598);
+}

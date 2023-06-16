@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VivaFlores</title>
+    <link rel="stylesheet" href="estilo.css/UrlEstilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body id="body">
+    <header id="header" style="margin-bottom: 5rem;">
+      <div class="container-fluid">
+        <nav class="navbar">
+            <div class="container-fluid">
+              <a href="index.html" style="text-decoration: none; color: black;"> <img src="imagens/logoEmpresa.png" alt="" style="width: 30%;"><strong style="padding-top: 30px;">VivaFlores</strong></a>
+              <form class="d-flex col-5" role="search">
+                <input class="form-control" type="search" placeholder="Pesquisar" aria-label="Search" style="height: 25px;">
+                <button class="btn btn-outline-success" type="submit"  style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem; height: 25px; width: 30px;">🔍</button>
+              </form>
+              <span>
+                <button id="logar" class="btn btn-outline-success" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="--bs-btn-padding-y: .20rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .70rem; height: 23px; width:16%; margin-left: 20px; text-align: center;">Login</button>
+              <a href="#" id="traduzir" class="mx-3"><img src="imagens/united-states-flag-free-png.webp" alt="" style="width: 40px;"></a>
+              <a href="#" id="aumentarFonte" class="mx-3">A+</a>
+              <a href="#" id="diminuirFonte" class="mx-2">A-</a>
+              <a href="#" class="mx-2" style="text-decoration: none;" id="temaEscuro">👁️</a>
+            </span>
+            </div>
+          </nav>
+          <nav class="navbar navbar-expand-lg bg-body-tertiary" style="height: 2rem;">
+            <div class="container-fluid">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+           <ul class="navbar-nav">
+             <li class="marginMenu nav-item">
+               <a class="nav-link active" aria-current="page" href="#"><strong>Tipos de Flores</strong></a>
+             </li>
+             <div class="collapse navbar-collapse " id="navbarNav">
+               <ul class="navbar-nav">
+                 <li class="marginMenu nav-item">
+                   <a class="nav-link active" aria-current="page" href="maisVendidos.html"><strong>Mais Vendidos</strong></a>
+                 </li>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="marginMenu nav-item">
+                  <a class="nav-link active" aria-current="page" href="ofertasDia.html"><strong>Ofertas do Dia</strong></a>
+                </li>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="marginMenu nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"><strong>Ebooks</strong></a>
+                    </li>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav">
+                  <li class="marginMenu nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"><strong>Flores em Vasos</strong></a>
+                  </li>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="marginMenu nav-item">
+                        <a class="nav-link active" aria-current="page" href="ideiasPresentes.html"><strong>Ideias para Presentes</strong></a>
+                      </li>
+                </div>
+              </nav>
+    </header>
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Login</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">@</span>
+                <input type="text" class="form-control" placeholder="Insira seu email" aria-label="Username" aria-describedby="addon-wrapping">
+              </div>
+              <br>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">$</span>
+                <input type="text" class="form-control" placeholder="Insira sua senha" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              </div>
+              <div class="container">
+              <button type="button" class="btn bnt-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">Criar minha conta</button>
+             </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Acessar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Cadastro</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">@</span>
+                <input type="text" class="form-control" placeholder="Insira seu email" aria-label="Username" aria-describedby="addon-wrapping">
+              </div>
+              <br>
+              <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">:)</span>
+                <input type="text" class="form-control" placeholder="Nome e sobrenome" aria-label="Username" aria-describedby="addon-wrapping">
+              </div>
+              <br>
+              <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">$</span>
+                <input type="text" class="form-control" placeholder="Crie uma senha" aria-label="Username" aria-describedby="addon-wrapping">
+              </div>
+              <br>
+              <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">$</span>
+                <input type="text" class="form-control" placeholder="Confirme a senha" aria-label="Username" aria-describedby="addon-wrapping">
+              </div>
+             </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cadastrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <main>
+        <a href="chat.html"><div id="mascote" class="" style="margin-top: 19%;"><img src="imagens/Mascote 2-fotor-bg-remover-20230517182451.png" alt="" class="img-fluid"></div></a>
+
+        <div class="container">
+            <div class="row d-flex justify-content-center" style="margin-bottom: 5rem;">
+                
+                <h2 style="text-align: center;">Artigos</h2>
+                <div class="card text-center m-3" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Plantas Nativas: Biodiversidade</h5>
+                      <br>
+                      <a href="#" class="btn btn-primary">Fazer Leitura</a>
+                    </div>
+                  </div>
+
+                  <div class="card text-center m-3" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Jardins Verticais: Solução Criativa</h5>
+                      <br>
+                      <a href="#" class="btn btn-primary">Fazer Leitura</a>
+                    </div>
+                  </div>
+
+                  <div class="card text-center m-3" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Plantas Carnívoras: Beleza Mortal</h5>
+                      <br>
+                      <a href="#" class="btn btn-primary">Fazer Leitura</a>
+                    </div>
+                </div>
+
+                  <div class="card text-center m-3" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Suculentas: Beleza Exótica em Casa</h5>
+                      <br>
+                      <a href="#" class="btn btn-primary">Fazer Leitura</a>
+                    </div>
+                  </div>
+
+                  <div class="card text-center m-3" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Plantas Medicinais: Natureza para Saúde</h5>
+                        <br>
+                        <a href="#" class="btn btn-primary">Fazer Leitura</a>
+                    </div>
+                  </div>
+
+                  <div class="card text-center m-3" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Plantas Tropicais: Jardim Exuberante</h5>
+                      <br>
+                      <a href="#" class="btn btn-primary">Fazer Leitura</a>
+                    </div>
+                  </div>
+
+                  <div class="card text-center m-3" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Plantas Aromáticas: Perfume e Sabor</h5>
+                      <br>
+                      <a href="#" class="btn btn-primary">Fazer Leitura</a>
+                    </div>
+                  </div>
+
+                  <div class="card text-center m-3" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Horta em Casa: Cultive seu Alimento</h5>
+                      <br>
+                      <a href="#" class="btn btn-primary">Fazer Leitura</a>
+                    </div>
+                  </div>
+
+                  <div class="card text-center m-3" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title">Botânica: Plantas Curiosas</h5>
+                      <br>
+                      <a href="#" class="btn btn-primary">Fazer Leitura</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <div id="rodape" class="container-fluid d-flex justify-content-center align-items-center">
+          <div class="row">
+            <div id="voltarInicio" class="container-fluid">
+              <a href="" class="d-flex justify-content-center align-items-center"><h6>Voltar ao início</h6></a>
+            <hr>
+            </div>
+              <div class="dadosRodape col-3">
+                  <h6>Contatos 📞</h6>
+                  <ul class="dadosRodape">
+                    <li>(81) 90000-0000</li>
+                    <li>(81) 90000-0000</li>
+                  </ul>
+              </div>
+              <div class="col-3">
+                <h6>Pagamento 💲</h6>
+                <ul class="dadosRodape">
+                  <li>Pix</li>
+                  <li>Cartao de crédito</li>
+                  <li>Boleto</li>
+                </ul>
+              </div>
+              <div class="col-3">
+                  <h6>Conheça-nos 🙂</h6>
+                  <ul class="dadosRodape">
+                  <li>Informações corportivas</li>
+                  <li>Acessibilidade</li>
+                  <li>Comunidade</li>
+                </ul>
+              </div>
+              <div class="col-3">
+                  <h6>Cidades 🗺️</h6>
+                  <ul class="dadosRodape">
+                    <li>Recife | Londes | Nova York </li>
+                    <li>Berlim | Lisboa | Madrid</li>
+                  </ul>
+              </div>
+          </div>
+        </div>
+      </footer>
+    <script src="javaScript/temaEscuro.js"></script>
+    <script src="javaScript/tamanhoFonte.js"></script>
+    <script src="javaScript/traducao.js"></script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+
+#avaliacoes img{
+    width: 90%;
+    height: 90%;
+}
+
+#avaliacoes .row{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+#avaliacoes {
+    background-color: white;
+    border-width: 1px;
+    margin-bottom: 3rem;
+}
+
+#avaliacoes p{
+    font-size: 70%;
+}
+
+
+.nomeCliente {
+    font-size: 76%;
+}
